@@ -1,0 +1,9 @@
+###
+POST http://localhost:8087/email
+content-type: application/json
+
+{
+  "nom":"slimane",
+  "email":"slimaneamiar@talik.io",
+  "message":"hello"
+}
