@@ -3,22 +3,22 @@ import { setupRenderingTest } from 'talik/tests/helpers';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | map', function (hooks) {
+module('Integration | Component | feature', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<Map />`);
+    await render(hbs`<Feature />`);
 
     assert.dom(this.element).hasText('');
 
     // Template block usage:
     await render(hbs`
-      <Map>
+      <Feature>
         template block text
-      </Map>
+      </Feature>
     `);
 
     assert.dom(this.element).hasText('template block text');

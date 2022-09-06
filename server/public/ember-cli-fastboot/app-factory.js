@@ -1,4 +1,4 @@
-define('~fastboot/app-factory', ['casse-autoselection/app', 'casse-autoselection/config/environment'], function(App, config) {
+define('~fastboot/app-factory', ['talik/app', 'talik/config/environment'], function(App, config) {
   App = App['default'];
   config = config['default'];
 

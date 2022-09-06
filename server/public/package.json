@@ -1,5 +1,5 @@
 {
-  "name": "casse-autoselection",
+  "name": "talik",
   "version": "0.0.0",
   "private": true,
   "description": "Casse autoselection",
@@ -39,7 +39,7 @@
     "broccoli-asset-rev": "^3.0.0",
     "cssnano": "^5.1.12",
     "ember-auto-import": "^2.4.2",
-    "ember-cli": "~4.5.0",
+    "ember-cli": "~4.4.0",
     "ember-cli-app-version": "^5.0.0",
     "ember-cli-babel": "^7.26.11",
     "ember-cli-dependency-checker": "^3.3.1",
@@ -56,7 +56,7 @@
     "ember-page-title": "^7.0.0",
     "ember-qunit": "^5.1.5",
     "ember-resolver": "^8.0.3",
-    "ember-source": "~4.5.0",
+    "ember-source": "~4.4.0",
     "ember-template-lint": "^4.10.1",
     "ember-welcome-page": "^6.2.0",
     "eslint": "^7.32.0",
@@ -82,30 +82,16 @@
   "ember": {
     "edition": "octane"
   },
-  "dependencies": {
-    "abortcontroller-polyfill": "^1.7.3",
-    "node-fetch": "^2.6.1"
-  },
-  "fastboot": {
-    "schemaVersion": 5,
-    "htmlEntrypoint": "index.html",
-    "moduleWhitelist": [
-      "node-fetch",
-      "abortcontroller-polyfill",
-      "abortcontroller-polyfill/dist/cjs-ponyfill"
-    ]
-  },
-  "keywords": [
-    "ember-addon",
-    "ember-addon"
-  ],
   "ember-addon": {
+    "paths": [
+      "lib/blog"
+    ],
     "type": "app",
     "version": 2,
     "auto-upgraded": true,
     "assets": [
       "/ember-welcome-page/images/construction.png",
-      "/assets/casse-autoselection.css",
+      "/assets/talik.css",
       "ember-cli-fastboot/app-factory.js",
       "./ember-fetch/fetch-fastboot.js",
       "assets/embroider_macros_fastboot_init.js",
@@ -139,6 +125,7 @@
       "assets/images/footer-shape-right.png",
       "assets/images/header-image.png",
       "assets/images/header-image.svg",
+      "assets/images/icons/puzzle-piece.svg",
       "assets/images/logo-footer.svg",
       "assets/images/logo.png",
       "assets/images/logo.svg",
@@ -179,5 +166,22 @@
       ".hbs"
     ],
     "root-url": "/"
-  }
+  },
+  "dependencies": {
+    "abortcontroller-polyfill": "^1.7.3",
+    "node-fetch": "^2.6.1"
+  },
+  "fastboot": {
+    "schemaVersion": 5,
+    "htmlEntrypoint": "index.html",
+    "moduleWhitelist": [
+      "node-fetch",
+      "abortcontroller-polyfill",
+      "abortcontroller-polyfill/dist/cjs-ponyfill"
+    ]
+  },
+  "keywords": [
+    "ember-addon",
+    "ember-addon"
+  ]
 }

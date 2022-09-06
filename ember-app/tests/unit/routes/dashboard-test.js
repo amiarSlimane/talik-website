@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { setupTest } from 'casse-autoselection/tests/helpers';
+import { setupTest } from 'talik/tests/helpers';
 
 module('Unit | Route | dashboard', function (hooks) {
   setupTest(hooks);

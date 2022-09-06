@@ -1,5 +1,5 @@
-import Application from 'casse-autoselection/app';
-import config from 'casse-autoselection/config/environment';
+import Application from 'talik/app';
+import config from 'talik/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';

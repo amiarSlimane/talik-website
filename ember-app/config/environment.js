@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'casse-autoselection',
+    modulePrefix: 'talik',
     environment,
     rootURL: '/',
     locationType: 'history',

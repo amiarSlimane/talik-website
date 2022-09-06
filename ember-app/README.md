@@ -6,7 +6,7 @@ Together we are going to take an embroider enabled Ember app and configure a web
 
 This guide will not go over enabling embroider in your application, I will be using a fresh ember app with full embroider compatibility (route splitting included).
 
-An example app is available at https://github.com/evoactivity/casse-autoselection
+An example app is available at https://github.com/evoactivity/talik
 
 ## Goal
 
@@ -216,7 +216,7 @@ We now need to import our CSS into our application. We are going to import our C
 import Application from '@ember/application';
 import Resolver from 'ember-resolver';
 import loadInitializers from 'ember-load-initializers';
-import config from 'casse-autoselection/config/environment';
+import config from 'talik/config/environment';
 // import our applications style entrypoint
 import './assets/styles.css';
 
@@ -372,4 +372,4 @@ declare module '*.css' {
 You can now customize your PostCSS and Tailwind configs, add your own PostCSS addons and make it work for you and your team.
 
 Once you have your CSS modernized I would suggest managing your images and fonts in a similar way. That will be my next article, using webpack's `asset/loader` for fonts and `responsive-loader` to generate responsive images from a single image import.
-# casse-autoselection
+# talik

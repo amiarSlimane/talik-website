@@ -1,0 +1,19 @@
+<div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
+  <div class="single_services text-center mt-8 mx-3">
+    <div class="services_icon">
+      <i class="lni lni-bullhorn">
+        <img width="64" src="/assets/images/icons/{{@icon}}.svg" alt="icon" />
+      </i>
+    </div>
+    <div class="services_content mt-5 xl:mt-10">
+      <h3
+        class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl"
+      >
+        {{yield to='title'}}
+      </h3>
+      <p class="mt-4">
+        {{yield to='description'}}
+      </p>
+    </div>
+  </div>
+</div>
