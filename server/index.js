@@ -8,7 +8,7 @@ const compression = require('compression');
 var bodyParser = require('body-parser')
 
 const httpServer = new ExpressHTTPServer({
-  port: 8087
+  port: 8088
 });
 const app = httpServer.app;
 
