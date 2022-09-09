@@ -18597,3 +18597,10 @@ a, button {
 .shape {
   z-index: -1;
 }
+
+
+
+
+img {
+  border: 0px !important;
+}
