@@ -23,6 +23,7 @@
     "test:ember": "ember test"
   },
   "devDependencies": {
+    "@ember-eui/core": "^5.10.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.8.1",
     "@embroider/compat": "^1.8.3",
@@ -51,6 +52,7 @@
     "ember-data": "~4.4.0",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.1.1",
+    "ember-focus-trap": "^1.0.1",
     "ember-load-initializers": "^2.1.2",
     "ember-modifier": "^3.2.7",
     "ember-page-title": "^7.0.0",
@@ -65,7 +67,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-qunit": "^7.3.1",
+    "focus-trap": "^7.0.0",
     "loader.js": "^4.7.0",
+    "moment": "^2.29.3",
     "npm-run-all": "^4.1.5",
     "ol": "^6.15.1",
     "postcss": "^8.4.14",
