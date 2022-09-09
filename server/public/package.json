@@ -23,6 +23,7 @@
     "test:ember": "ember test"
   },
   "devDependencies": {
+    "@ember-eui/core": "^5.10.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.8.1",
     "@embroider/compat": "^1.8.3",
@@ -51,6 +52,7 @@
     "ember-data": "~4.4.0",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.1.1",
+    "ember-focus-trap": "^1.0.1",
     "ember-load-initializers": "^2.1.2",
     "ember-modifier": "^3.2.7",
     "ember-page-title": "^7.0.0",
@@ -65,7 +67,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-qunit": "^7.3.1",
+    "focus-trap": "^7.0.0",
     "loader.js": "^4.7.0",
+    "moment": "^2.29.3",
     "npm-run-all": "^4.1.5",
     "ol": "^6.15.1",
     "postcss": "^8.4.14",
@@ -82,15 +86,34 @@
   "ember": {
     "edition": "octane"
   },
+  "dependencies": {
+    "abortcontroller-polyfill": "^1.7.3",
+    "node-fetch": "^2.6.1"
+  },
+  "fastboot": {
+    "schemaVersion": 5,
+    "htmlEntrypoint": "index.html",
+    "moduleWhitelist": [
+      "node-fetch",
+      "abortcontroller-polyfill",
+      "abortcontroller-polyfill/dist/cjs-ponyfill"
+    ]
+  },
+  "keywords": [
+    "ember-addon",
+    "ember-addon"
+  ],
   "ember-addon": {
-    "paths": [
-      "lib/blog"
-    ],
     "type": "app",
     "version": 2,
     "auto-upgraded": true,
     "assets": [
       "/ember-welcome-page/images/construction.png",
+      "/assets/ember-basic-dropdown.less",
+      "/assets/ember-basic-dropdown.scss",
+      "/assets/ember-power-select",
+      "/assets/ember-power-select.less",
+      "/assets/ember-power-select.scss",
       "/assets/talik.css",
       "ember-cli-fastboot/app-factory.js",
       "./ember-fetch/fetch-fastboot.js",
@@ -116,9 +139,6 @@
       "assets/fonts/lineicons/unicodesMap.json",
       "assets/images/.xdp-logo.svg.2022_08_04_11_02_00.0.svg-InTJOh",
       "assets/images/about.svg",
-      "assets/images/blog-1.jpg",
-      "assets/images/blog-2.jpg",
-      "assets/images/blog-3.jpg",
       "assets/images/contact.svg",
       "assets/images/favicon.png",
       "assets/images/footer-shape-left.png",
@@ -127,25 +147,13 @@
       "assets/images/header-image.svg",
       "assets/images/icons/puzzle-piece.svg",
       "assets/images/logo-footer.svg",
-      "assets/images/logo.png",
       "assets/images/logo.svg",
       "assets/images/logos.svg",
-      "assets/images/service-image.svg",
       "assets/images/shape/shape-1.svg",
       "assets/images/shape/shape-2.svg",
       "assets/images/shape/shape-3.svg",
       "assets/images/shape/shape-4.svg",
-      "assets/images/team-1.jpg",
-      "assets/images/team-2.jpg",
-      "assets/images/team-3.jpg",
-      "assets/images/team-4.jpg",
-      "assets/images/team-5.jpg",
       "assets/images/testimonials/author-01.png",
-      "assets/images/work-1.jpg",
-      "assets/images/work-2.jpg",
-      "assets/images/work-3.jpg",
-      "assets/images/work-4.jpg",
-      "assets/images/work-5.jpg",
       "robots.txt",
       "index.html",
       "package.json",
@@ -166,22 +174,5 @@
       ".hbs"
     ],
     "root-url": "/"
-  },
-  "dependencies": {
-    "abortcontroller-polyfill": "^1.7.3",
-    "node-fetch": "^2.6.1"
-  },
-  "fastboot": {
-    "schemaVersion": 5,
-    "htmlEntrypoint": "index.html",
-    "moduleWhitelist": [
-      "node-fetch",
-      "abortcontroller-polyfill",
-      "abortcontroller-polyfill/dist/cjs-ponyfill"
-    ]
-  },
-  "keywords": [
-    "ember-addon",
-    "ember-addon"
-  ]
+  }
 }
