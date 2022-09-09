@@ -17,13 +17,14 @@
               aria-controls="navbarOne"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              {{on 'click' this.toggle}}
             >
               <span class="toggler-icon"></span>
               <span class="toggler-icon"></span>
               <span class="toggler-icon"></span>
             </button>
             <div
-              class="absolute left-0 z-20 hidden w-full px-5 py-3 duration-300 bg-white lg:w-auto collapse navbar-collapse lg:block top-full mt-full lg:static lg:bg-transparent shadow lg:shadow-none"
+              class="absolute left-0 z-20 {{if this.hidden 'hidden' ''}} w-full px-5 py-3 duration-300 bg-white lg:w-auto collapse navbar-collapse lg:block top-full mt-full lg:static lg:bg-transparent shadow lg:shadow-none"
               id="navbarOne"
             >
               <ul
