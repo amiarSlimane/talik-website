@@ -13,7 +13,7 @@
     "ember-fetch": "^8.1.1",
     "express": "^4.17.1",
     "fastboot-app-server": "^3.3.0",
-    "fastboot-express-middleware": "^3.3.0",
+    "fastboot-express-middleware": "^3.3.2",
     "helmet": "^5.1.0",
     "xss": "^1.0.11",
     "xss-clean": "^0.1.1"
