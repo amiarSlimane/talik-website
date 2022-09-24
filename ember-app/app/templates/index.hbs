@@ -1,21 +1,8 @@
-<div class="preloader">
-  <div class="loader">
-    <div class="ytp-spinner">
-      <div class="ytp-spinner-container">
-        <div class="ytp-spinner-rotator">
-          <div class="ytp-spinner-left">
-            <div class="ytp-spinner-circle"></div>
-          </div>
-          <div class="ytp-spinner-right">
-            <div class="ytp-spinner-circle"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<section class="header_area">
-  <Header />
+
+   {{!-- <SubHeader/> --}}
+
+<section class="header_area mt-16" {{scroll-anchor}}>
+
   <div
     id="home"
     class="header_hero bg-gray relative z-10 overflow-hidden lg:flex items-center"
@@ -82,6 +69,9 @@
     </div>
   </div>
 </section>
+
+
+
 <section id="features" class="services_area pt-120 pb-120">
   <div class="container">
     <div class="row justify-center">
@@ -157,8 +147,5 @@
   </div>
 </section>
 <Contact />
-<Footer />
-<a href="#" class="scroll-top">
-  <FaIcon @icon="chevron-up" @prefix="fas" class="lni lni-chevron-up" />
-</a>
+
 
