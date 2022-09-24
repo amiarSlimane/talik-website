@@ -9,6 +9,25 @@
               <img src="assets/images/logo.svg" alt="Logo" />
 
             </LinkTo>
+
+            <ul class="items-center content-start mr-auto lg:justify-start navbar-nav lg:flex">
+               <li class="nav-item ml-5 lg:ml-11">
+                  <LinkToScroll aclass="page-scroll active" @route="index" @anchor="home">
+                    Home
+                  </LinkToScroll>
+                </li>
+
+                <li class="nav-item ml-5 lg:ml-11">
+                  <LinkToScroll class="page-scroll" @route="index" @anchor="features">
+                    Features
+                  </LinkToScroll>
+                </li>
+                <li class="nav-item ml-5 lg:ml-11">
+                  <LinkToScroll class="page-scroll" @route="index" @anchor="contact">
+                    Contact
+                  </LinkToScroll>
+                </li>
+            </ul>
             <button
               class="block navbar-toggler focus:outline-none lg:hidden"
               type="button"
@@ -31,31 +50,36 @@
                 id="nav"
                 class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex"
               >
-                <li class="nav-item ml-5 lg:ml-11">
-                  <a class="page-scroll active" href="#home">
-                    Home
-                  </a>
-                </li>
+
+
 
                 <li class="nav-item ml-5 lg:ml-11">
-                  <a class="page-scroll" href="#features">
-                    Features
-                  </a>
+                  <LinkTo @route="demo">
+                    Demo
+                  </LinkTo>
                 </li>
-                <li class="nav-item ml-5 lg:ml-11">
-                  <a class="page-scroll" href="#contact">
-                    Contact
-                  </a>
+
+                 <li class="nav-item ml-5 lg:ml-11">
+                  <LinkTo @route="documentation">
+                    Documentation
+                  </LinkTo>
                 </li>
 
               </ul>
             </div>
-            <!-- navbar collapse -->
+            {{!-- navbar collapse --}}
           </nav>
-          <!-- navbar -->
+          {{!-- navbar --}}
         </div>
       </div>
-      <!-- row -->
+      {{!-- row --}}
     </div>
-    <!-- container -->
+    {{!-- container --}}
   </div>
+
+
+
+
+
+
+
