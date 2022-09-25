@@ -14,13 +14,16 @@ export default class LinkToScrollComponent extends Component {
 
   @action
   linkAndScroll(evt){
-    //evt.preventDefault();
-    window.localStorage.setItem('anchor', this.args.anchor);
-    this.router.transitionTo("index");
-    // if(this.router.location.rootURL =='/'){
-    // console.log('anchor.....', this.args.anchor);
-    // window.location.hash = '#' + this.args.anchor;
-    // }
+
+    console.log('this.router.location.pathname ',this.router.location.location.pathname);
+    if(this.router.location.location.pathname =='/'){
+      window.localStorage.setItem('anchor', this.args.anchor);
+      // this.router.transitionTo("index");
+    }else{
+      evt.preventDefault();
+      window.localStorage.setItem('anchor', this.args.anchor);
+      this.router.transitionTo("index");
+    }
 
   }
 }
