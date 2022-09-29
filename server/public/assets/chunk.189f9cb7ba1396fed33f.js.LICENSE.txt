@@ -92,6 +92,8 @@
 
 /*! ./views/reply_input.handlebars */
 
+/*! flat */
+
 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
 /*!**************************!*\
@@ -101,6 +103,10 @@
 /*!****************************!*\
       !*** ./src/lib/index.scss ***!
       \****************************/
+
+/*!************************************!*\
+      !*** ./node_modules/flat/index.js ***!
+      \************************************/
 
 /*!****************************************!*\
       !*** ./src/lib/views/input.handlebars ***!
