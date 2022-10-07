@@ -20,9 +20,12 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
-    "test:ember": "ember test"
+    "test:ember": "ember test",
+    "tailwind:build": "npx tailwindcss -c ./config/tailwind/tailwind.config.js -i ./config/tailwind/tailwind-input.css -o ./public/assets/tailwind.css",
+    "tailwind:watch": "npx tailwindcss -c ./config/tailwind/tailwind.config.js -i ./config/tailwind/tailwind-input.css -o ./public/assets/tailwind.css --watch"
   },
   "devDependencies": {
+    "@ember/legacy-built-in-components": "^0.4.1",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.8.1",
     "@embroider/compat": "^1.8.3",
@@ -34,7 +37,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
-    "autoprefixer": "^10.4.7",
+    "autoprefixer": "^10.4.12",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "cssnano": "^5.1.12",
@@ -46,9 +49,11 @@
     "ember-cli-fastboot": "^3.3.2",
     "ember-cli-htmlbars": "^6.1.0",
     "ember-cli-inject-live-reload": "^2.1.0",
+    "ember-cli-postcss": "^8.2.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
-    "ember-data": "~4.4.0",
+    "ember-data": "~4.1.0",
+    "ember-engines": "^0.8.23",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.1.1",
     "ember-focus-trap": "^1.0.1",
@@ -61,8 +66,6 @@
     "ember-talik": "1.0.7",
     "ember-template-lint": "^4.10.1",
     "ember-truth-helpers": "^3.1.1",
-    "ember-unique-id-helper-polyfill": "^1.2.2",
-    "ember-welcome-page": "^6.2.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-ember": "^10.6.1",
@@ -70,16 +73,16 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-qunit": "^7.3.1",
     "focus-trap": "^7.0.0",
-    "loader.js": "^4.7.0",
+    "loader.js": "^4.1.0",
     "moment": "^2.29.3",
     "npm-run-all": "^4.1.5",
     "ol": "^6.15.1",
-    "postcss": "^8.4.14",
-    "postcss-loader": "^7.0.1",
+    "postcss": "^8.4.17",
+    "postcss-import": "^15.0.0",
     "prettier": "^2.7.1",
     "qunit": "^2.19.1",
     "qunit-dom": "^2.0.0",
-    "tailwindcss": "^3.1.6",
+    "tailwindcss": "^3.1.8",
     "webpack": "^5.73.0"
   },
   "engines": {
@@ -88,29 +91,15 @@
   "ember": {
     "edition": "octane"
   },
-  "dependencies": {
-    "abortcontroller-polyfill": "^1.7.3",
-    "node-fetch": "^2.6.1"
-  },
-  "fastboot": {
-    "schemaVersion": 5,
-    "htmlEntrypoint": "index.html",
-    "moduleWhitelist": [
-      "node-fetch",
-      "abortcontroller-polyfill",
-      "abortcontroller-polyfill/dist/cjs-ponyfill"
-    ]
-  },
-  "keywords": [
-    "ember-addon",
-    "ember-addon"
-  ],
   "ember-addon": {
+    "paths": [
+      "lib/admin",
+      "lib/documentation"
+    ],
     "type": "app",
     "version": 2,
     "auto-upgraded": true,
     "assets": [
-      "/ember-welcome-page/images/construction.png",
       "/assets/talik.css",
       "ember-cli-fastboot/app-factory.js",
       "./ember-fetch/fetch-fastboot.js",
@@ -151,6 +140,7 @@
       "assets/images/shape/shape-3.svg",
       "assets/images/shape/shape-4.svg",
       "assets/images/testimonials/author-01.png",
+      "assets/tailwind.css",
       "favicon.ico",
       "robots.txt",
       "index.html",
@@ -172,5 +162,25 @@
       ".hbs"
     ],
     "root-url": "/"
-  }
+  },
+  "dependencies": {
+    "tw-elements": "^1.0.0-alpha12",
+    "admin": "*",
+    "documentation": "*",
+    "abortcontroller-polyfill": "^1.7.3",
+    "node-fetch": "^2.6.1"
+  },
+  "fastboot": {
+    "schemaVersion": 5,
+    "htmlEntrypoint": "index.html",
+    "moduleWhitelist": [
+      "node-fetch",
+      "abortcontroller-polyfill",
+      "abortcontroller-polyfill/dist/cjs-ponyfill"
+    ]
+  },
+  "keywords": [
+    "ember-addon",
+    "ember-addon"
+  ]
 }

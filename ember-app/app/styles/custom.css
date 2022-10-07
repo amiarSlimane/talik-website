@@ -977,6 +977,9 @@ video {
   color: rgba(249, 79, 79, var(--tw-text-opacity));
 }
 
+
+
+
 .z-10{
   z-index: 10;
 }
@@ -1114,6 +1117,7 @@ h6 {
 a, button {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
 }
 
@@ -1163,6 +1167,7 @@ a, button {
   z-index: 10;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
   border-top-right-radius: 0px;
 }
@@ -1200,6 +1205,8 @@ a, button {
   --tw-rotate: 0;
   --tw-skew-x: 0;
   --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
   transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-scale-x: 0;
   --tw-scale-y: 0;
@@ -1207,6 +1214,7 @@ a, button {
   --tw-translate-y: -50%;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 500ms;
   padding: 50%;
   content: '';
@@ -1237,6 +1245,7 @@ a, button {
   z-index: 20;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
 }
 
@@ -1288,6 +1297,7 @@ a, button {
   z-index: 20;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
 }
 
@@ -1540,6 +1550,7 @@ a, button {
 .single_services{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
 }
 
@@ -1586,6 +1597,7 @@ a, button {
   --tw-translate-y: -50%;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
 }
 
@@ -1593,6 +1605,7 @@ a, button {
   fill: #fff1f1;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
 }
 
@@ -1717,6 +1730,7 @@ a, button {
   width: 44px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
 }
 
@@ -1744,6 +1758,7 @@ a, button {
 }
 
 .tns-nav button {
+  --tw-bg-opacity: 1;
   background-color: rgba(249, 79, 79, var(--tw-bg-opacity));
   --tw-bg-opacity: 0.3;
 }
@@ -3145,6 +3160,7 @@ a, button {
 .single_team{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
 }
 
@@ -9966,6 +9982,7 @@ a, button {
   --tw-translate-x: 0px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
 }
 
@@ -11381,6 +11398,7 @@ a, button {
 .single_pricing{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
 }
 
@@ -18183,6 +18201,7 @@ a, button {
   --tw-translate-y: -50%;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   transition-duration: 300ms;
 }
 
@@ -18340,6 +18359,7 @@ a, button {
 }
 
 .footer_social li a {
+  --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   --tw-bg-opacity: 0.1;
 }
@@ -18559,16 +18579,14 @@ a, button {
   }
 }
 
+
 .shape {
   z-index: -1;
 }
 
+
+
+
 img {
   border: 0px !important;
 }
-
-
-
-
-
-
