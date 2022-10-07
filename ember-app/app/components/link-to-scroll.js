@@ -1,11 +1,10 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
-import {inject as service} from '@ember/service';
+import { inject as service } from '@ember/service';
 
 export default class LinkToScrollComponent extends Component {
-
   @service router;
-  constructor(...args){
+  constructor(...args) {
     super(...args);
 
     // console.log('args route ', this.args.route);
@@ -13,17 +12,18 @@ export default class LinkToScrollComponent extends Component {
   }
 
   @action
-  linkAndScroll(evt){
-
-    console.log('this.router.location.pathname ',this.router.location.location.pathname);
-    if(this.router.location.location.pathname =='/'){
+  linkAndScroll(evt) {
+    console.log(
+      'this.router.location.pathname ',
+      this.router.location.location.pathname
+    );
+    if (this.router.location.location.pathname == '/') {
       window.localStorage.setItem('anchor', this.args.anchor);
       // this.router.transitionTo("index");
-    }else{
+    } else {
       evt.preventDefault();
       window.localStorage.setItem('anchor', this.args.anchor);
-      this.router.transitionTo("index");
+      this.router.transitionTo('index');
     }
-
   }
 }
