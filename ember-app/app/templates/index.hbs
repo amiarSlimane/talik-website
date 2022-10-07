@@ -1,7 +1,7 @@
 
    {{!-- <SubHeader/> --}}
 
-<section class="header_area mt-16" {{scroll-anchor}}>
+<section class="header_area  " {{scroll-anchor}}>
 
   <div
     id="home"
@@ -10,33 +10,21 @@
     <div class="hero_shape shape_1">
       <img src="assets/images/shape/shape-1.svg" alt="shape" />
     </div>
-    <div class="hero_shape shape_2">
-      <img src="assets/images/shape/shape-2.svg" alt="shape" />
-    </div>
-    <div class="hero_shape shape_3">
-      <img src="assets/images/shape/shape-3.svg" alt="shape" />
-    </div>
+
     <div class="hero_shape shape_4">
       <img src="assets/images/shape/shape-4.svg" alt="shape" />
     </div>
     <div class="hero_shape shape_6">
       <img src="assets/images/shape/shape-1.svg" alt="shape" />
     </div>
-    <div class="hero_shape shape_7">
-      <img src="assets/images/shape/shape-4.svg" alt="shape" />
-    </div>
-    <div class="hero_shape shape_9">
-      <img src="assets/images/shape/shape-2.svg" alt="shape" />
-    </div>
+
     <div class="hero_shape shape_10">
       <img src="assets/images/shape/shape-4.svg" alt="shape" />
     </div>
     <div class="hero_shape shape_11">
       <img src="assets/images/shape/shape-1.svg" alt="shape" />
     </div>
-    <div class="hero_shape shape_12">
-      <img src="assets/images/shape/shape-2.svg" alt="shape" />
-    </div>
+
     <div class="container">
       <div class="row">
         <div class="w-full lg:w-1/2">
@@ -64,7 +52,7 @@
     <div class="header_shape hidden lg:block"></div>
     <div class="header_image flex items-center">
       <div class="image 2xl:pl-25">
-        <img src="assets/images/header-image.svg" alt="Header Image" />
+        <img src="assets/images/header-image.svg" alt="Header Image" class="max-w-3xl max-h-full"/>
       </div>
     </div>
   </div>
@@ -141,6 +129,14 @@
         </:title>
         <:description>
           Get notified when a comment is added and you will never miss anything from your audience.
+        </:description>
+      </Feature>
+       <Feature @icon="palette">
+        <:title>
+          Custom theme
+        </:title>
+        <:description>
+           You can custumize the look of the comments section to fit your website design.
         </:description>
       </Feature>
     </div>
