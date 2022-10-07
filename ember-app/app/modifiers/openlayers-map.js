@@ -5,9 +5,7 @@ import OSM from 'ol/source/OSM';
 import TileLayer from 'ol/layer/Tile';
 import View from 'ol/View';
 
-export default modifier(function openlayersMap(
-  element /*, positional, named*/
-) {
+export default modifier((element, [eventName, handler]) => {
   const map = new Map({
     layers: [
       new TileLayer({
