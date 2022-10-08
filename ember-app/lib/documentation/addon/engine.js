@@ -9,7 +9,7 @@ const Eng = Engine.extend({
   modulePrefix,
   Resolver,
   dependencies: {
-    services: ['router', 'metrics'],
+    services: ['host-router', 'metrics'],
   },
 });
 
