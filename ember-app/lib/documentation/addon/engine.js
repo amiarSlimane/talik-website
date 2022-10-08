@@ -8,6 +8,9 @@ const { modulePrefix } = config;
 const Eng = Engine.extend({
   modulePrefix,
   Resolver,
+  dependencies: {
+    services: ['router', 'metrics'],
+  },
 });
 
 loadInitializers(Eng, modulePrefix);

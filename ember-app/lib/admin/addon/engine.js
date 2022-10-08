@@ -8,11 +8,10 @@ const { modulePrefix } = config;
 const Eng = Engine.extend({
   modulePrefix,
   Resolver,
-  dependencies : {
-    externalRoutes: [
-      'index',
-    ]
-  }
+  dependencies: {
+    externalRoutes: ['index'],
+    services: ['router', 'metrics'],
+  },
 });
 
 loadInitializers(Eng, modulePrefix);

@@ -8,14 +8,20 @@ export default class App extends Application {
   Resolver = Resolver;
 
   engines = {
-    'admin': {
+    admin: {
       dependencies: {
         externalRoutes: {
           index: 'index',
-        }
-      }
-    }
-  }
+        },
+        services: ['router', 'metrics'],
+      },
+    },
+    documentation: {
+      dependencies: {
+        services: ['router', 'metrics'],
+      },
+    },
+  };
 }
 
 loadInitializers(App, config.modulePrefix);
