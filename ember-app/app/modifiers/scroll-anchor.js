@@ -1,11 +1,12 @@
-import { modifier } from 'ember-modifier';
-import { inject as service } from '@ember/service';
+import Modifier from 'ember-modifier';
 
-export default modifier((element, [eventName, handler]) => {
-  const anchor = window.localStorage.getItem('anchor');
-  if (anchor) {
-    window.location.hash = '#' + anchor;
-  } else {
-    window.location.hash = '#home';
+export default class ScrollAnchorModifier extends Modifier {
+  modify(element, [scrollPosition], { relative }) {
+    const anchor = window.localStorage.getItem('anchor');
+    if (anchor) {
+      window.location.hash = '#' + anchor;
+    } else {
+      window.location.hash = '#home';
+    }
   }
-});
+}
