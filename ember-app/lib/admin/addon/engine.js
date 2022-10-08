@@ -10,7 +10,7 @@ const Eng = Engine.extend({
   Resolver,
   dependencies: {
     externalRoutes: ['index'],
-    services: ['router', 'metrics'],
+    services: ['host-router', 'metrics'],
   },
 });
 
