@@ -6,7 +6,7 @@
             class="flex items-center justify-between  navbar navbar-expand-lg"
           >
            <LinkToScroll aclass="navbar-brand mr-5" @route="index" @anchor="home">
-                   <img src="assets/images/logo.svg" alt="Logo" />
+                   <img src="/assets/images/logo.svg" alt="Logo" />
                   </LinkToScroll>
 
 
@@ -60,12 +60,12 @@
                 </li>
 
                  <li class="nav-item ml-5 lg:ml-11">
-                  <LinkTo @route="documentation">
+                  <LinkTo @route="documentation.home">
                     Documentation
                   </LinkTo>
                 </li>
                 <li class="nav-item ml-5 lg:ml-11">
-                  <LinkTo @route="admin">
+                  <LinkTo @route="admin.home">
                     Admin
                   </LinkTo>
                 </li>
