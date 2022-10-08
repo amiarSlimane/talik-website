@@ -8,7 +8,9 @@ module.exports = {
       },
       "env_development": {
          "NODE_ENV": "development"
-      }
+      },
+      "instances" : "max",
+      "exec_mode" : "cluster"
     },
 ],
 
