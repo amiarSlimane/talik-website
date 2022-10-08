@@ -4,6 +4,7 @@ import { inject as service } from '@ember/service';
 export default class DemoRoute extends Route {
   @service metrics;
   @service router;
+  @service headData;
 
   constructor() {
     super(...arguments);
@@ -14,5 +15,9 @@ export default class DemoRoute extends Route {
 
       this.metrics.trackPage({ page, title });
     });
+  }
+
+  afterModel() {
+    this.headData.title = 'Demo';
   }
 }
