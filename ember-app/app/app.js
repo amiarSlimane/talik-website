@@ -13,12 +13,12 @@ export default class App extends Application {
         externalRoutes: {
           index: 'index',
         },
-        services: ['router', 'metrics'],
+        services: [{ 'host-router': 'router' }, 'metrics'],
       },
     },
     documentation: {
       dependencies: {
-        services: ['router', 'metrics'],
+        services: [{ 'host-router': 'router' }, 'metrics'],
       },
     },
   };
