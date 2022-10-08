@@ -20,7 +20,7 @@ module.exports = {
       repo : 'https://github.com/amiarSlimane/talik-website',
       path : '/home/slimane/talik/talik-website',
       'pre-deploy-local': '',
-      'post-deploy' : 'npm install ./server/ && pm2 reload ecosystem.config.js --env production',
+      'post-deploy' : 'cd server && npm install  && cd .. && pm2 reload ecosystem.config.js --env production',
       'pre-setup': ''
     }
   }
