@@ -2,7 +2,6 @@ import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 
 export default class ApplicationController extends Controller {
-
   @service router;
 
   get isAdmin() {
@@ -10,7 +9,5 @@ export default class ApplicationController extends Controller {
     if (url.includes('/admin')) return true;
 
     return false;
-
   }
-
 }

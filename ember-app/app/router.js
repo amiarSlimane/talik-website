@@ -7,7 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('index', {path:'/'});
+  this.route('index', { path: '/' });
   this.route('demo');
   this.mount('documentation');
   this.mount('admin');

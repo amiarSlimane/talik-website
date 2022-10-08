@@ -11,7 +11,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build --environment=production",
+    "build": "ember build --environment=production --output-path ../server/public",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
     "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
     "lint:hbs": "ember-template-lint .",
@@ -58,6 +58,7 @@
     "ember-fetch": "^8.1.1",
     "ember-focus-trap": "^1.0.1",
     "ember-load-initializers": "^2.1.2",
+    "ember-metrics": "^1.5.2",
     "ember-modifier": "^3.2.7",
     "ember-page-title": "^7.0.0",
     "ember-qunit": "^5.1.5",
