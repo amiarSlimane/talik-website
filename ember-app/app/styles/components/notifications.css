@@ -1,0 +1,6 @@
+
+.c-notification__icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
