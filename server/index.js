@@ -1,5 +1,5 @@
 const express = require('express');
-const fastbootMiddleware = require('fastboot-express-middleware');
+// const fastbootMiddleware = require('fastboot-express-middleware');
 const FastBootAppServer = require('fastboot-app-server');
 const ExpressHTTPServer = require('fastboot-app-server/src/express-http-server');
 const helmet = require('helmet');
@@ -15,9 +15,9 @@ const app = httpServer.app;
 app.use(xss());
 app.use(compression());
 
-app.use('/assets', express.static('./server/public/assets'));
-app.use('/api', express.static('./server/public/api'));
-app.use('/images', express.static('./server/public/images'));
+app.use('/assets', express.static('./public/assets'));
+app.use('/api', express.static('./public/api'));
+app.use('/images', express.static('./public/images'));
 
 app.use('/email', bodyParser.json());
 app.post('/email', (req, res)=>{
@@ -36,7 +36,7 @@ app.post('/email', (req, res)=>{
 
 let server = new FastBootAppServer({
   httpServer: httpServer,
-  distPath: './server/public',
+  distPath: './public',
   gzip: true, // Optional - Enables gzip compression.
   host: '0.0.0.0', // Optional - Sets the host the server listens on.
   port: 8087, // Optional - Sets the port the server listens on (defaults to the PORT env var or 3000).
