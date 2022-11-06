@@ -3,7 +3,7 @@ import { action } from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default class ContactComponent extends Component {
-  // @service euiToaster;
+   @service notifications;
 
   @action
   submit(evt) {
@@ -15,5 +15,9 @@ export default class ContactComponent extends Component {
     //   iconType: 'clock',
     //   toastLifeTimeMs: 15000,
     // });
+    this.notifications.error('Please use the email address instead, waiting for this feature to be ready',{
+      autoClear: true,
+      clearDuration: 5000,
+    });
   }
 }
