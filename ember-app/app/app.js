@@ -18,7 +18,7 @@ export default class App extends Application {
     },
     documentation: {
       dependencies: {
-        services: [{ 'host-router': 'router' }, 'metrics'],
+        services: [{ 'host-router': 'router' }, 'metrics', 'store'],
       },
     },
   };
