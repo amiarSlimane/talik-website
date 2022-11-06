@@ -13,6 +13,7 @@ module.exports = {
     path.join(adminEngineEntry, relevantFilesGlob),
     path.join(documentationEngineEntry, relevantFilesGlob),
   ],
+  darkMode: true,
   theme: {
     extend: {},
   },
