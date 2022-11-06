@@ -7,3 +7,7 @@
 - Ember.js. 
 - Node.js.
 - Tailwind CSS.
+
+### Deployment 
+
+- pm2 deploy production
