@@ -5,6 +5,7 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'documentation',
     environment,
+    projectName: 'Talik',
   };
 
   return ENV;

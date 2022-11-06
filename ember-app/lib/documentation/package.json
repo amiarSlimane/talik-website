@@ -5,8 +5,23 @@
     "ember-engine"
   ],
   "dependencies": {
-    "ember-cli-htmlbars": "*",
+    "@ember/legacy-built-in-components": "^0.4.1",
     "ember-cli-babel": "*",
-    "@ember/legacy-built-in-components": "^0.4.1"
+    "ember-cli-htmlbars": "*",
+    "ember-auto-import": "^2.4.0",
+    "ember-modal-dialog": "^4.0.0",
+    "ember-truth-helpers": "^3.0.0",
+    "ember-svg-jar": "^2.3.4",
+    "ember-keyboard": "^8.0.0",
+    "tracked-toolbox": "^2.0.0",
+    "ember-concurrency": "^2.0.0",
+    "ember-set-helper": "^2.0.1",
+    "ember-composable-helpers": "^5.0.0",
+    "ember-cli-string-helpers": "^6.1.0",
+    "ember-cli-addon-docs-yuidoc": "^1.0.0",
+    "highlight.js": "^11.4.0"
+  },
+  "devDependencies": {
+
   }
 }
