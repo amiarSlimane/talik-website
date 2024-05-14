@@ -166,7 +166,7 @@
     "root-url": "/"
   },
   "dependencies": {
-    "tw-elements": "^1.0.0-alpha12",
+    "tw-elements": "^2.0.0",
     "admin": "*",
     "documentation": "*",
     "abortcontroller-polyfill": "^1.7.3",
