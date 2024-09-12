@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.0",
+    "body-parser": "^1.20.3",
     "ember-fetch": "^8.1.2",
-    "express": "^4.17.1",
+    "express": "^4.21.0",
     "fastboot-express-middleware": "^3.3.2",
     "fastboot-app-server": "^3.3.2",
     "xss": "^1.0.14",
